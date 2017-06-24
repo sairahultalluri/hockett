@@ -1,0 +1,44 @@
+
+<ion-header>
+
+    <ion-title>Welcome to Hockett</ion-title>
+
+</ion-header>
+
+
+<ion-content padding class="action-sheets-basic-page">
+   
+  <p> Transforming Getures from Deaf and Dumb People by giving words via Speach or Text. </p>
+
+  <ion-list radio-group [(ngModel)]="language">
+  <ion-item>
+    <ion-label>English</ion-label>
+    <ion-radio value="eng" checked></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Hindi</ion-label>
+    <ion-radio value="hin"></ion-radio>
+  </ion-item>
+  
+</ion-list>
+ <ion-list>
+
+      <ion-item>
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="text" placeholder="required" [(ngModel)]="email"  required></ion-input>
+      </ion-item>
+      
+        <!--
+          <ion-item>
+            <ion-label stacked>Password</ion-label>
+        <ion-input type="password" placeholder="required" [(ngModel)]="formInput.pass" [ngModelOptions]="{standalone: true}" required></ion-input>
+      </ion-item>-->
+      <br/>
+      <ion-row>
+        <ion-col no-padding>
+          <button ion-button (click)='getStarted()' block>Get Started</button>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+</ion-content>
+
